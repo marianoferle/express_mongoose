@@ -12,10 +12,7 @@ var port = 5000;
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://127.0.0.1:27017/Persona', {useNewUrlParser: true}).then( async function(err,client){
     
-    //var rr_= Model_.findOne({'nombre':'mariano'});
-    //var rr_ = Model_.collection('User').find();
-    //console.log(rr_);
-   
+  
     //crear user en colleccion
     /*
     const d_= new Model_({
@@ -35,10 +32,8 @@ mongoose.connect('mongodb://127.0.0.1:27017/Persona', {useNewUrlParser: true}).t
     await Model_.find({'edad':32},'nombre',function(err,user_){
         console.log(user_);
     });*/
-  
-
-           
-    
+;
+               
     console.log('mongoose ..'); 
 
     app.listen(port, () => {
