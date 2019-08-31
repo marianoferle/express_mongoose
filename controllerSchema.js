@@ -14,11 +14,9 @@ exports.getPersona = async function(req,res){
 
     await Model_.findOne({'nombre':nombre_,'edad':'32'},function(err,user_){
         console.log(user_);
-        res.send(
-            'Hola ' + 
+        res.send(            
             user_.get('nombre') + 
-            '!'+
-            "edad:"+
+            '<br/>'+         
             user_.get('edad')
             );
     })
