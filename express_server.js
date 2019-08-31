@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 
 //---------------------------
 var app = express();
-var Rutas_ = require('./rutaSchema.js'); 
+var Rutas_ = require('./rutaSchema'); 
 
 //-----------------
 app.use(bodyParser.urlencoded({extended:false}));
