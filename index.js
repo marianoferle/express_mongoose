@@ -16,23 +16,23 @@ mongoose.connect('mongodb://127.0.0.1:27017/Persona', {useNewUrlParser: true}).t
     //crear user en colleccion
     /*
     const d_= new Model_({
-        "nombre" : "mariano",
-        "edad" : 32,
+        "nombre" : "nombre1",
+        "edad" : 30,
         "comentario" : "nada",
         "fecha" : {
-            "dia" : 22,
-            "mes" : 5,
-            "año" : 1987
+            "dia" : 12,
+            "mes" : 4,
+            "año" : 1985
         }
     });
     await d_.save();
     */
 
     /*
-    await Model_.find({'edad':32},'nombre',function(err,user_){
+    await Model_.find({'edad':30},'nombre',function(err,user_){
         console.log(user_);
     });*/
-;
+
                
     console.log('mongoose ..'); 
 
